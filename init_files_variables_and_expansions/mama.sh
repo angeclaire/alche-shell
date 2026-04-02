@@ -6,7 +6,7 @@ read file
 read -p "Enter the command answer "  cmd
 
 echo -e "#!/bin/bash" > ${file}
-echo -e "${cmd}"
+echo -e "${cmd}" > ${file}
 
 chmod u+x ${file}
 
