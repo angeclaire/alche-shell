@@ -1,2 +1,2 @@
 #!/bin/bash
-i=0; while IFS= read -r l; do ((i%2==0)) && echo "$l"; ((i++)); done
+paste -- | cut -f1
