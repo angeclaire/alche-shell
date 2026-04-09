@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Reads apache-access.log and prints visitor IP and HTTP status code in "IP HTTP_CODE" format
+while IFS=' ' read -r ip _ _ _ _ _ _ _ status _; do echo "$ip $status"; done < apache-access.log
